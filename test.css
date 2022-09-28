@@ -1,73 +1,26 @@
-body,html {
-    margin: 0;
-    font: bold 14px/1.4 'Open Sans', arial, sans-serif;
-    background: #000;
+body {
+    background-color: #F7F7F7;
+    margin-top: 50px;
   }
-  ul { 
-    margin: 150px auto 0; 
-    padding: 0; 
-    list-style: none; 
-    display: table;
-    width: 600px;
-    text-align: center;
-  }
-  li { 
-    display: table-cell; 
-    position: relative; 
-    padding: 15px 0;
-  }
-  a {
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 0.15em;
-    
-    display: inline-block;
-    padding: 15px 20px;
-    position: relative;
-  }
-  a:after {    
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: #fff;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-  }
-  a:hover:after { 
-    width: 100%; 
-    left: 0; 
-  }
-  @media screen and (max-height: 300px) {
-      ul {
-          margin-top: 40px;
-      }
-  }
-  
-
   
   .card {
-    height: auto;
+    height: auto !important;
     padding: 0.9375rem;
   }
   .card:last-of-type {
-    float: right ;
+    float: left !important;
   }
   .card a {
     height: auto;
   }
   .card a .container {
     border-radius: 2px;
-    background: #000000;
+    background: #FFFFFF;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
     transition: all 0.2s ease-in-out 0s;
   }
   .card a .container:hover {
-    transform: translateY(-0.55em);
+    transform: translateY(-0.25em);
     box-shadow: 0px 12px 20px 0px rgba(0, 0, 0, 0.1);
   }
   .card a .container img {
@@ -75,7 +28,7 @@ body,html {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 2px 2px 0 0;
   }
   .card a .container img[src=""] {
     content: url("https://s-media-cache-ak0.pinimg.com/originals/84/71/e2/8471e2efdd2d3164895748ee8673124d.jpg");
@@ -89,15 +42,15 @@ body,html {
   .card a .details .top {
     width: 100%;
   }
-  /* .card a .details .top .title {
+  .card a .details .top .title {
     font-weight: 500;
     font-size: 1.15rem;
-    color: #ffffff;
+    color: #2A2D33;
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-  } */
+  }
   .card a .details .top .title:empty:before {
     content: "No title found";
   }
