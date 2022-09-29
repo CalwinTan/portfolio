@@ -1,79 +1,63 @@
+body,
+html{
+      margin: 0;
+      padding: 0;
+      height: 100%;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
 body {
-    background-color: #F7F7F7;
-    margin-top: 50px;
-  }
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+svg {
+      display: block;
+      width: 100%;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+}
   
-  .card {
-    height: auto !important;
-    padding: 0.9375rem;
+.scrollElement {
+      position: absolute;
+      height: 6000px;
+      width: 100px;
+      top: 0;
+      z-index: 0;
+}
+
+  .btn {
+      position: fixed;
+      bottom: 5%;
+      right: 0px;
+      transform: translateX(-50%);
+      border: 1px solid #fff;
+      border-radius: 5px;
+      font-size: 0.9rem;
+      padding: 0.5rem 0.7em;
+      background-color: transparent;
+      color: #ffffff;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      cursor: pointer;
+      transition: all .3s;
+      z-index: 11;
   }
-  .card:last-of-type {
-    float: left !important;
+
+  .btn_works {
+      left: 100px;
+      right: unset;
+      text-decoration: none;
   }
-  .card a {
-    height: auto;
-  }
-  .card a .container {
-    border-radius: 2px;
-    background: #FFFFFF;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
-    transition: all 0.2s ease-in-out 0s;
-  }
-  .card a .container:hover {
-    transform: translateY(-0.25em);
-    box-shadow: 0px 12px 20px 0px rgba(0, 0, 0, 0.1);
-  }
-  .card a .container img {
-    height: 245px;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 2px 2px 0 0;
-  }
-  .card a .container img[src=""] {
-    content: url("https://s-media-cache-ak0.pinimg.com/originals/84/71/e2/8471e2efdd2d3164895748ee8673124d.jpg");
-  }
-  .card a .details {
-    padding: 0.9375rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .card a .details .top {
-    width: 100%;
-  }
-  .card a .details .top .title {
-    font-weight: 500;
-    font-size: 1.15rem;
-    color: #2A2D33;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  .card a .details .top .title:empty:before {
-    content: "No title found";
-  }
-  .card a .details .bottom {
-    width: 100%;
-    padding-top: 6px;
-  }
-  .card a .details .bottom .rating {
-    float: left;
-  }
-  .card a .details .bottom .rating .fa-star-o {
-    color: #2A2D33;
-  }
-  .card a .details .bottom .rating .fa-star {
-    color: #F8E71C;
-  }
-  .card a .details .bottom .favourite {
-    float: right;
-    height: 100%;
-  }
-  .card a .details .bottom .favourite .fa-heart-o {
-    color: #2A2D33;
-  }
-  .card a .details .bottom .favourite .fa-heart {
-    color: #FF6060;
+
+  .btn:hover {
+      background: #ffffff;
+      color: #1B1734;
   }
